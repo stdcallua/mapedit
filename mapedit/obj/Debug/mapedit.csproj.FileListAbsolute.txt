@@ -6,3 +6,5 @@ D:\work\mapedit\gridmaker\obj\Debug\mapedit.Properties.Resources.resources
 D:\work\mapedit\gridmaker\obj\Debug\mapedit.csproj.GenerateResource.Cache
 D:\work\mapedit\gridmaker\obj\Debug\mapedit.exe
 D:\work\mapedit\gridmaker\obj\Debug\mapedit.pdb
+D:\work\mapedit\mapedit\obj\Debug\mapedit.exe
+D:\work\mapedit\mapedit\obj\Debug\mapedit.pdb
