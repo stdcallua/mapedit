@@ -1,0 +1,9 @@
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\bin\Debug\gridmaker.exe
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\bin\Debug\gridmaker.pdb
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.csprojResolveAssemblyReference.cache
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.Main.resources
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.Properties.Resources.resources
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.csproj.GenerateResource.Cache
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.exe
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.pdb
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Debug\gridmaker.Document.resources

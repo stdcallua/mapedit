@@ -1,0 +1,8 @@
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\gridmaker.Document.resources
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\gridmaker.Main.resources
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\gridmaker.Properties.Resources.resources
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\gridmaker.csproj.GenerateResource.Cache
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\bin\Release\mapmaker.exe
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\bin\Release\mapmaker.pdb
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\mapmaker.exe
+D:\airsoft\Генератор сетки\gridmaker\gridmaker\obj\Release\mapmaker.pdb
