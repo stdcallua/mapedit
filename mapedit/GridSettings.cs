@@ -19,6 +19,7 @@ namespace mapedit
         }
 
         private String _mapFileName = String.Empty;
+
         [EditorAttribute(typeof(FilteredFileNameEditor), typeof(System.Drawing.Design.UITypeEditor))]
         [Category("Карта")]
         [Description("Файл карты")]
@@ -33,6 +34,57 @@ namespace mapedit
             }
         }
 
+        public int SourceWidth;
+        public int SourceHeight;
+
+        private double _widthMap = 1000;
+
+        [Category("Grid params")]
+        [Description("Ширина карты  в метрах")]
+        public double WidthMap
+        {
+            get { return _widthMap; }
+            set
+            {
+                _widthMap = value;
+                RecalcStep();
+                OnPropertyChanged("WidthMap");
+            }
+        }
+
+        private double _heightMap = 1000;
+        [Category("Grid params")]
+        [Description("Высота карты  в метрах")]
+        public double HeightMap
+        {
+            get { return _heightMap; }
+            set
+            {
+                _heightMap = value;
+                RecalcStep();
+                OnPropertyChanged("WidthMap");
+            }
+        }
+
+        private void RecalcStep()
+        {
+            _step = (int)((SourceWidth * _cellSize) / WidthMap);
+        }
+
+        private double _cellSize = 100;
+        [Category("Grid params")]
+        [Description("Размер сетки в метрах")]
+        public double CellSize
+        {
+            get { return _cellSize; }
+            set
+            {
+                _cellSize = value;
+                RecalcStep();
+                OnPropertyChanged("CellSize");
+            }
+        }
+
         private int _step = 100;
         [Category("Grid params")]
         [Description("Настройка шага сетки")]
@@ -41,7 +93,8 @@ namespace mapedit
             get { return _step; }
             set
             {
-                _step = value;
+                if (value != 0) 
+                    _step = value;
                 OnPropertyChanged("Step");
             }
         }
@@ -78,6 +131,20 @@ namespace mapedit
             set
             {
                 _color = value;
+                OnPropertyChanged("Color");
+            }
+        }
+
+        private Color _colorFont = Color.Red;
+        [XmlIgnore]
+        [Category("Grid params")]
+        [Description("Цвет текста")]
+        public Color ColorFont
+        {
+            get { return _colorFont; }
+            set
+            {
+                _colorFont = value;
                 OnPropertyChanged("Color");
             }
         }

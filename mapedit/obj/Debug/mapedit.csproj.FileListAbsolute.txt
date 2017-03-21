@@ -8,3 +8,12 @@ D:\work\mapedit\gridmaker\obj\Debug\mapedit.exe
 D:\work\mapedit\gridmaker\obj\Debug\mapedit.pdb
 D:\work\mapedit\mapedit\obj\Debug\mapedit.exe
 D:\work\mapedit\mapedit\obj\Debug\mapedit.pdb
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.exe
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.pdb
+D:\work\mapedit\mapedit\mapedit\bin\Debug\mapedit.exe
+D:\work\mapedit\mapedit\mapedit\bin\Debug\mapedit.pdb
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.csprojResolveAssemblyReference.cache
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.Document.resources
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.Main.resources
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.Properties.Resources.resources
+D:\work\mapedit\mapedit\mapedit\obj\Debug\mapedit.csproj.GenerateResource.Cache

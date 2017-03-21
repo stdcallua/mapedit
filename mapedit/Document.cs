@@ -69,6 +69,9 @@ namespace mapedit
         {
             if (!System.IO.File.Exists(Settings.MapFileName)) return;
             Source = Image.FromFile(Settings.MapFileName);
+            _settings.SourceWidth = Source.Width;
+            _settings.SourceHeight = Source.Height;
+
         }
 
         private void _settings_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -112,8 +115,10 @@ namespace mapedit
             Graphics draw = Graphics.FromImage(_buffer);
             //Draw grid
             draw.Clear(Color.White);
+            
             if (Settings.WhiteSpace)
-                draw.DrawImage(Source, new Point(Settings.Step, Settings.Step));
+                draw.DrawImage(Source, new Rectangle(new Point(Settings.Step, Settings.Step),  new Size(Source.Width, Source.Height)),
+                   new Rectangle(0, 0, Source.Width, Source.Height) , GraphicsUnit.Pixel);
             else
                 draw.DrawImage(Source, new Point(0, 0));
             var widthCount = Source.Width / Settings.Step;
@@ -138,7 +143,7 @@ namespace mapedit
                 var text = horizontal.Next();
                 var sizeText = draw.MeasureString(text, Settings.Font.FontValue);
                 Point textpoint = new Point(i * Settings.Step + (Settings.Step - (int)sizeText.Width) / 2, (Settings.Step- (int)sizeText.Height)/2);
-                draw.DrawString(text, Settings.Font.FontValue, new SolidBrush(Settings.Color), textpoint);
+                draw.DrawString(text, Settings.Font.FontValue, new SolidBrush(Settings.ColorFont), textpoint);
             }
 
             Markers.IMarker vertical = new Markers.NumberMarker();
@@ -154,7 +159,7 @@ namespace mapedit
                 var text = vertical.Next();
                 var sizeText = draw.MeasureString(text, Settings.Font.FontValue);
                 Point textpoint = new Point((Settings.Step - (int)sizeText.Width) / 2, i * Settings.Step + (Settings.Step - (int)sizeText.Height) / 2);
-                draw.DrawString(text, Settings.Font.FontValue, new SolidBrush(Settings.Color), textpoint);
+                draw.DrawString(text, Settings.Font.FontValue, new SolidBrush(Settings.ColorFont), textpoint);
 
             }
             Invalidate();
